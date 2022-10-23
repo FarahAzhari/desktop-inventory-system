@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="91f82509-de0b-4cdd-89ab-4f2608351d32">
+	<property name="ireport.zoom" value="0.9090909090909095"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#8FAFCC">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#8FAFCC">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#8FAFCC">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#8FAFCC">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="New Dataset 1" uuid="e8bc42d2-652d-4df6-a1ac-24eea6b61c93">
+		<queryString language="SQL">
+			<![CDATA[SELECT
+     orderbarang.`noorder` AS orderbarang_noorder,
+     orderbarang.`namacs` AS orderbarang_namacs,
+     orderbarang.`namamontir` AS orderbarang_namamontir,
+     orderbarang.`namabarang` AS orderbarang_namabarang,
+     orderbarang.`qty` AS orderbarang_qty,
+     orderbarang.`total` AS orderbarang_total,
+     orderbarang.`tgl_orderb` AS orderbarang_tgl_orderb
+FROM
+     `orderbarang` orderbarang]]>
+		</queryString>
+		<field name="orderbarang_tgl_orderb" class="java.sql.Date"/>
+		<field name="orderbarang_noorder" class="java.lang.Integer"/>
+		<field name="orderbarang_namacs" class="java.lang.String"/>
+		<field name="orderbarang_namamontir" class="java.lang.String"/>
+		<field name="orderbarang_namabarang" class="java.lang.String"/>
+		<field name="orderbarang_qty" class="java.lang.Integer"/>
+		<field name="orderbarang_total" class="java.lang.Integer"/>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     orderbarang.`noorder` AS orderbarang_noorder,
+     orderbarang.`namacs` AS orderbarang_namacs,
+     orderbarang.`namamontir` AS orderbarang_namamontir,
+     orderbarang.`namabarang` AS orderbarang_namabarang,
+     orderbarang.`qty` AS orderbarang_qty,
+     orderbarang.`total` AS orderbarang_total,
+     orderbarang.`tgl_orderb` AS orderbarang_tgl_orderb
+FROM
+     `orderbarang` orderbarang]]>
+	</queryString>
+	<field name="orderbarang_tgl_orderb" class="java.sql.Date"/>
+	<field name="orderbarang_noorder" class="java.lang.Integer"/>
+	<field name="orderbarang_namacs" class="java.lang.String"/>
+	<field name="orderbarang_namamontir" class="java.lang.String"/>
+	<field name="orderbarang_namabarang" class="java.lang.String"/>
+	<field name="orderbarang_qty" class="java.lang.Integer"/>
+	<field name="orderbarang_total" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="89" splitType="Stretch">
+			<staticText>
+				<reportElement x="219" y="51" width="369" height="35" uuid="4c4ac9d2-4eb6-41a5-b326-ab6e186e9b78"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[Maulana Motor Service]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="0" width="498" height="51" forecolor="#FFFFFF" backcolor="#D70000" uuid="6380e3c0-206d-4716-a9ef-e3dbf0498cf6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Pemesanan Barang]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="10" y="10" width="46" height="50" backcolor="#000000" uuid="4d286317-cd30-49a7-9111-54b921b6581f"/>
+			</rectangle>
+			<image>
+				<reportElement x="10" y="10" width="100" height="50" uuid="a5b116c8-7f9b-49bb-bb74-327532e940d2"/>
+				<imageExpression><![CDATA["src\\menu\\logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="113" y="4" width="568" height="24" uuid="2055876b-3320-406c-bc8f-47065f30f558"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Jl. Cipinang Baru Raya No.1A RT.6/RW.2 Jakarta Timur DKI Jakarta]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="206" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table 3" style="table 3" isPrintRepeatedValues="false" mode="Opaque" x="0" y="13" width="802" height="59" uuid="3988262a-ef31-460c-bf73-da19abeec28c"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="New Dataset 1" uuid="7268106a-4b67-4d4c-aa88-42730e2bf634">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="128" uuid="0e32afe6-56cd-46fd-ba6e-970ec84ad0f0">
+						<jr:tableHeader style="table 3_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="112" height="30" uuid="d1396391-cfae-47e4-8d56-b9f58c5ec8d7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[TANGGAL]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="11" y="0" width="90" height="20" uuid="459c40f1-3985-41cf-a3d1-ccf783396026"/>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{orderbarang_tgl_orderb}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="111" uuid="34be5ae9-d27e-4aeb-8e96-299f9128001c">
+						<jr:tableHeader style="table 3_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="103" height="30" uuid="b95f9c05-8fa9-4c97-a826-18820b09b2df"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[NO ORDER]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="10" y="0" width="83" height="20" uuid="c950e972-faea-4cc0-9ae8-9236290d712f"/>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{orderbarang_noorder}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="141" uuid="f83fc4ef-3a1c-49b2-8d50-0abad7c5ee87">
+						<jr:tableHeader style="table 3_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="1" y="0" width="129" height="30" uuid="671dab85-3452-44aa-85bb-d0ace27f5f47"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[NAMA CUSTOMER]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="14" y="0" width="104" height="20" uuid="7e2ab119-e771-4157-bd41-7522f23a2930"/>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{orderbarang_namacs}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="123" uuid="5be5879d-41d5-4bad-86f5-5c89173506d8">
+						<jr:tableHeader style="table 3_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="117" height="30" uuid="7be26800-ae7d-4af8-a116-6c8ebad9e65a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[NAMA MONTIR]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="13" y="0" width="90" height="20" uuid="c8f4c441-8a68-47e2-a624-5c06204c827d"/>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{orderbarang_namamontir}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="120" uuid="8facd3a7-dcac-4196-aa31-07aaaf37d6f4">
+						<jr:tableHeader style="table 3_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="113" height="30" uuid="6d6a0373-8349-46b8-acca-7a3b8613de69"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[NAMA BARANG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="12" y="0" width="90" height="20" uuid="4cf17d39-7df2-46b3-a578-718c84a935c2"/>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{orderbarang_namabarang}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="7f5db221-636c-463c-886b-73961aad99a0">
+						<jr:tableHeader style="table 3_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="e3138d22-3386-4731-b2ae-7c950b8d5e15"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[QTY]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="11" y="0" width="63" height="20" uuid="a2da7e76-6062-42d1-9aff-d146e1a89f32"/>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{orderbarang_qty}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="98" uuid="40b778c0-c967-4425-987a-852e64a3b2e7">
+						<jr:tableHeader style="table 3_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="6fe8dc98-a717-455f-9def-7e6bf103896d"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[TOTAL]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="10" y="0" width="70" height="20" uuid="90577641-89ac-45d1-868c-cef1a856ac2b"/>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{orderbarang_total}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="32" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="669" y="12" width="133" height="20" uuid="a1788bc0-e8fd-4f03-8948-4c4da4a9f9b5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="165" splitType="Stretch">
+			<staticText>
+				<reportElement x="669" y="0" width="133" height="24" uuid="e3e47cbc-42ed-4563-9814-6db8e663a810"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Pemilik]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="669" y="73" width="133" height="24" uuid="9899a8ef-ac5b-450a-a9be-515aacb12366"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Effendi]]></text>
+			</staticText>
+			<image>
+				<reportElement x="669" y="24" width="100" height="50" uuid="4786c8d2-77dd-4eee-9f5a-843002aea87f"/>
+				<imageExpression><![CDATA["src\\menu\\MMS2.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="702" y="23" width="100" height="50" uuid="7fc1d8fe-40aa-4e8a-bc19-ef54721ed249"/>
+				<imageExpression><![CDATA["src\\menu\\MMS.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</jasperReport>
